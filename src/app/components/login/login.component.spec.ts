@@ -20,4 +20,10 @@ describe('LoginComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('prueba 1: usuario logeado', () => {
+    component.formularioLogin.setValue({usuario: "crisber", pass: "123456"});
+    component.ingresar();
+    expect(component.respuesta).toBe("true");
+  });
 });

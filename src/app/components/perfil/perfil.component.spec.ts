@@ -20,4 +20,21 @@ describe('PerfilComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('prueba 1: Perfil registrado con error', () => {
+    component.formularioPerfil.setValue({
+      nombrePerfil: "Prueba1"
+    });
+    component.registrar();
+    expect(component.resultado).toBe(false);
+  });
+
+  it('prueba 2: Perfil registrado sin error', () => {
+    component.formularioPerfil.setValue({
+      nombrePerfil: "PruebaDos"
+    });
+    component.registrar();
+    expect(component.resultado).toBe(true);
+  });
+
 });
