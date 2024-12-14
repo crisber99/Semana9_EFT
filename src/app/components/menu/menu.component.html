@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+      aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a [routerLink]="['/inicio']">
+      <img src="/assets/img/logo.png" width="100px" height="100px">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" ngClass="{'show-menu': isChecked}">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" [routerLink]="['/inicio']">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" [routerLink]="['/quienes-somos']">Quienes
+            somos</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" [routerLink]="['/catalogo']">Catálogo</a>
+        </li>
+        <div *ngIf="getPerfil()">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" [routerLink]="['/perfil']">Perfil</a></li>
+        </div>
+        <div *ngIf="getPerfil()">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" [routerLink]="['/usuario']">Usuario</a></li>
+        </div>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" [routerLink]="['/registro']">Registro</a>
+        </li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" [routerLink]="['/login']">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

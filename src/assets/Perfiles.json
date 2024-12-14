@@ -1,0 +1,14 @@
+[
+	{
+		"perfilCod": 1,
+		"perfilName": "Admin"
+	},
+	{
+		"perfilCod": 2,
+		"perfilName": "Visita"
+	},
+	{
+		"perfilCod": 3,
+		"perfilName": "Moderador"
+	}
+]

@@ -1,0 +1,32 @@
+.formulario-catalogo {
+    position: relative;
+    z-index: 0;
+    max-width: 1000px;
+    /* max-height: 800px; */
+    margin: 0px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    .formulario-catalogo {
+    margin: 20px auto;
+    max-height: 1800px;
+    }
+    }
+     
+    @media (max-width: 480px) {
+    .formulario-catalogo {
+    padding: 10px;
+    max-height: 1800px;
+    }
+    }
+     
+    @media (max-width: 320px) {
+    .formulario-catalogo {
+    padding: 5px;
+    max-height: 1800px;
+    }
+    }

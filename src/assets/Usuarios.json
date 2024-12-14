@@ -1,0 +1,23 @@
+{
+"Usuarios":[{
+	"email": "mail@mail.com",
+	"password": "Telev1s0$",
+	"username": "crisber",
+	"birthdate": "25/03/1986",
+	"perfil": "Admin"
+},
+{
+	"email": "mail2@mail.com",
+	"password": "Telev1s0$",
+	"username": "crisber2",
+	"birthdate": "25/03/1986",
+	"perfil": "Visita"
+},
+{
+	"email": "mail3@mail.com",
+	"password": "Telev1s0$",
+	"username": "crisber3",
+	"birthdate": "25/03/1986",
+	"perfil": "Moderador"
+}]
+}
