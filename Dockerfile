@@ -1,6 +1,6 @@
 # Usar una imagen base de Node.js para construir la aplicación
 
-FROM node:20.14 AS build
+FROM node:22.11.0 AS build
 
 # Establecer el directorio de trabajo en el contenedor
 WORKDIR /app
@@ -27,7 +27,7 @@ RUN npm run build --prod
 
 # Usar una imagen base de nginx para servir la aplicación
 
-FROM nginx:alpine
+#FROM nginx:alpine
 
 
 
